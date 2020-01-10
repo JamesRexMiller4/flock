@@ -5,7 +5,7 @@ import Landing from '../Landing/Landing';
 import Flock from '../Flock/Flock';
 import Home from '../Home/Home';
 import NotificationsContainer from '../../containers/NotificationsContainer/NotificationsContainer';
-import Profile from '../Profile/Profile';
+import Profile from '../../containers/Profile/Profile';
 
 function App() {
   return (
