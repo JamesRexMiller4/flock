@@ -80,7 +80,8 @@
   &:hover {
     animation-name: color;
     animation-duration: .5s;
-    background-color: rgba(180, 144, 51, 0.515)
+    background-color: rgba(180, 144, 51, 0.515);
+    cursor: pointer;
   }
 }
 .btn {
@@ -118,6 +119,7 @@
   height: 4vh;
   &:hover {
     background-color: rgb(142, 111, 34);
+    cursor: pointer;
   }
 }
 

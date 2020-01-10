@@ -13,6 +13,10 @@ class Landing extends Component {
       password: ''
     }
   }
+
+  handleChange = (e) => {
+    this.setState({[e.target.name]: e.target.value})
+  }
   render() { 
     return ( 
       <section className='landing-section-wrapper'>
@@ -25,9 +29,9 @@ class Landing extends Component {
         </div>
         <div className='right-landing-div'>
           <form className='form'>
-            <input placeHolder='Phone, email, or username' value={this.state.username} 
+            <input type='text' onChange={(e) => this.handleChange(e)} placeHolder='Phone, email, or username' 
             name='username' className='input-form' autoComplete='off'></input>
-            <input placeHolder='Password' value={this.state.password} 
+            <input type='password' onChange={(e) => this.handleChange(e)} placeHolder='Password' 
             name='password' className='input-form' autoComplete='off'></input>
             <button type='button' className='login btn'>Log in</button>
           </form>
