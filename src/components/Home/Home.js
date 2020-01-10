@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
-import TimeLine from '../../containers/TimeLine'
+import TimeLine from '../../containers/TimeLine/Timeline';
 
 const Home = () => {
   return ( 

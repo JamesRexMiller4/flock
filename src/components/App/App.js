@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Landing from '../Landing/Landing';
 import {Redirect, Route, Switch} from 'react-router-dom';
+import Landing from '../Landing/Landing';
 import Flock from '../Flock/Flock';
+import Home from '../Home/Home';
 import NotificationsContainer from '../../containers/NotificationsContainer/NotificationsContainer';
 import Profile from '../Profile/Profile';
-import Home from '../Home/Home';
 
 function App() {
   return (
