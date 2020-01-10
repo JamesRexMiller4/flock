@@ -14,12 +14,6 @@ function App() {
       <Route path='/notifications' component={Notifications} />
       <Route path='/flock' component={Flock} />
       <Route path='/profile' component={Profile} />
-      {/* // <nav>
-      //   <NavLink to='/home' className='nav'>Home</NavLink>/>
-      //   <NavLink to='/notifications' className='nav'>Notifications</NavLink>/>
-      //   <NavLink to='/flock' className='nav'>Flock</NavLink>/>
-      //   <NavLink to='/profile' className='nav'>Profile</NavLink>/>
-      // </nav> */}
       <Redirect to='/home' />
     </Switch>
     </main>
