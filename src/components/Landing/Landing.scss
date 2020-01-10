@@ -77,12 +77,12 @@
   color: #B7912E;
   width: 10%;
   height: 6vh;
-  &:hover {
-    animation-name: color;
-    animation-duration: .5s;
-    background-color: rgba(180, 144, 51, 0.515);
-    cursor: pointer;
-  }
+    &:hover {
+      animation-name: color;
+      animation-duration: .5s;
+      background-color: rgba(180, 144, 51, 0.515);
+      cursor: pointer;
+    }
 }
 .btn {
   background-color: white;
@@ -90,7 +90,6 @@
   border-color: #B7912E;
 
 }
-
 
 .welcome-message-div {
   width: 50%;

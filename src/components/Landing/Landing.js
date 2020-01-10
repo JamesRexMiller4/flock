@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import './Landing.scss';
+import { Link } from 'react-router-dom';
 import search from '../../images/search.svg';
 import group from '../../images/user-friends-solid.svg';
 import message from '../../images/comment.png';
 import twitter from '../../images/goldtwitter.png';
+import $ from 'jquery';
 
 class Landing extends Component {
   constructor(props) {
@@ -17,6 +19,17 @@ class Landing extends Component {
   handleChange = (e) => {
     this.setState({[e.target.name]: e.target.value})
   }
+
+  handleSubmit = () => {
+    console.log('Logged in')
+  }
+
+  handleError = () => {
+    if ($('#username-input').length < 1 || $('#password-input').length < 1) {
+      console.error('Please fill out all form fields')
+    }
+  }
+
   render() { 
     return ( 
       <section className='landing-section-wrapper'>
@@ -29,11 +42,13 @@ class Landing extends Component {
         </div>
         <div className='right-landing-div'>
           <form className='form'>
-            <input type='text' onChange={(e) => this.handleChange(e)} placeHolder='Phone, email, or username' 
+            <input id='username-input' type='text' onChange={(e) => this.handleChange(e)} placeHolder='Phone, email, or username' 
             name='username' className='input-form' autoComplete='off'></input>
-            <input type='password' onChange={(e) => this.handleChange(e)} placeHolder='Password' 
+            <input id='password-input' type='password' onChange={(e) => this.handleChange(e)} placeHolder='Password' 
             name='password' className='input-form' autoComplete='off'></input>
-            <button type='button' className='login btn'>Log in</button>
+            <Link to='/home'>
+              <button onClick={this.handleSubmit} type='button' className='login btn'>Log in</button>
+            </Link>
           </form>
           <div className='welcome-message-div'>
             <img src={twitter} alt='twitter-icon' className='twitter-icon'/>
