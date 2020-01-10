@@ -1,0 +1,44 @@
+.landing-section-wrapper {
+  display: flex;
+}
+
+
+
+.background-image-div-landing {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  background: {
+    image: url('../../images/goldtwitter.png');
+    size: auto;
+    repeat: no-repeat;
+    position: -40px -40px;
+    color: rgb(199, 164, 8, .75);
+  }
+}
+
+.paragraph-div-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: justify;
+  font-weight: bolder;
+  color: white;
+  font-size: 1.45rem;
+  margin: auto auto;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  fill: white;
+  color: white;
+}
+
+.landing-p {
+  margin: 10px;
+}
