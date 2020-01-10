@@ -1,0 +1,128 @@
+.landing-section-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+.background-image-div-landing {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  background: {
+    image: url('../../images/goldtwitter.png');
+    size: auto;
+    repeat: no-repeat;
+    position: -40px -40px;
+    color: rgb(199, 164, 8, .75);
+  }
+}
+
+.paragraph-div-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: justify;
+  font-weight: bolder;
+  color: white;
+  font-size: 1.45rem;
+  margin: auto auto;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  fill: white;
+  color: white;
+}
+
+.landing-p {
+  margin: 10px;
+}
+
+.right-landing-div {
+  width: 50%;
+  height: 100vh;
+}
+
+.form {
+  width: 100%;
+  margin: 30px 100px;
+}
+
+.input-form {
+  width: 15vw;
+  height: 6vh;
+  margin: 7px;
+  font-size: .85rem;
+  padding: 10px;
+  border: 1px solid rgb(233, 232, 232);
+  border-radius: 3px 3px 3px 3px;
+
+  &:focus {
+    outline: none;
+    border-color: #B7912E;
+  }
+}
+
+
+.login {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #B7912E;
+  width: 10%;
+  height: 6vh;
+    &:hover {
+      animation-name: color;
+      animation-duration: .5s;
+      background-color: rgba(180, 144, 51, 0.515);
+      cursor: pointer;
+    }
+}
+.btn {
+  background-color: white;
+  border-radius: 30px 30px;
+  border-color: #B7912E;
+
+}
+
+.welcome-message-div {
+  width: 50%;
+  margin: 150px auto;
+  h2 {
+    font-size: 1.65rem;
+    margin-bottom: 40px;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+
+.twitter-icon {
+  width: 3.5vw;
+  height: 4vh;
+  margin-bottom: 10px;
+}
+
+.sign-up {
+  font-size: .85rem;
+  font-weight: bolder;
+  background-color: #B7912E;
+  color: white;
+  width: 24vw;
+  height: 4vh;
+  &:hover {
+    background-color: rgb(142, 111, 34);
+    cursor: pointer;
+  }
+}
+
+@keyframes color {
+  0% {background-color: white;}
+  100% {background-color: rgba(180, 144, 51, 0.515)}
+}

@@ -5,7 +5,8 @@ class Tweet extends Component {
     super(props);
     this.state = {  }
   }
-  render({text, photo, username, handle, id, timestamp}) { 
+  render() { 
+    const {text, photo, username, handle, id, timestamp} = this.props;
     return ( 
       <section data-id={id}>
         <img src={photo} alt='profile' />
