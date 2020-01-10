@@ -5,10 +5,10 @@ class Tweet extends Component {
     super(props);
     this.state = {  }
   }
-  render({text, profile, username, handle, id, timestamp}) { 
+  render({text, photo, username, handle, id, timestamp}) { 
     return ( 
       <section data-id={id}>
-        <img src={profile} alt='profile' />
+        <img src={photo} alt='profile' />
         <h2>{username}</h2>
         <h2>{handle}</h2>
         <h2>{timestamp}</h2>
